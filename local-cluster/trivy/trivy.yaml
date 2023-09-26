@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: trivy
+  name: local-cluster-trivy
 spec:
   project: infrastructure
   destination:
@@ -12,6 +12,8 @@ spec:
     repoURL: https://aquasecurity.github.io/helm-charts
     chart: trivy-operator
     targetRevision: "0.18.1"
+    helm:
+      releaseName: trivy
   syncPolicy:
     automated: {}
     syncOptions:
