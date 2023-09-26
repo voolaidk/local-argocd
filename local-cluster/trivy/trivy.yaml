@@ -4,7 +4,7 @@ kind: Application
 metadata:
   name: trivy
 spec:
-  project: infrasctructure
+  project: infrastructure
   destination:
     namespace: trivy
     server: https://kubernetes.default.svc
