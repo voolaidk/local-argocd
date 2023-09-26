@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: local-cluster-argocd
 spec:
   project: infrastructure
   destination:
